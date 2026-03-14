@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru" style="height:100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css">
+    <style>
+        .select:not(.is-multiple):not(.is-loading)::after {
+            border-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body style="background-color:#112511; margin:0; min-height:100vh;">
+    <header class="helvetica">
+      <div class="cover bg-left bg-center-l" style="background-image: url('photos/park.jpg')">
+        <div class="bg-black-80 pb1 pb2-m pb3-l">
+          <nav class="dt w-100 mw8 center"> 
+            <div class="dtc w2 v-mid pa3">
+              <a href="/" class="dib w3 h3 pa1 grow-large border-box">
+                <img src="photos/icon.png" alt="Логотип" class="w-100 h-100">
+              </a>
+            </div>
+            <div class="dtc v-mid tr pa3">
+              <a class="f5 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="/" >Главная</a> 
+              <a class="f5 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="contacts.html" >Контакты</a>
+              <a class="f5 fw4 hover-white no-underline white-70 dn dib-l pv2 ph3" href="FAQ.html" >FAQ</a>  
+              <a class="f5 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba" href="/" >Вход/Регистрация</a> 
+            </div>
+          </nav> 
+    </header>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+
+                <div class="column is-5">
+                    <div class="box">
+
+                        <div class="field">
+                            <label class="label">Имя</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Введите текст" value="">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control">
+                                <input class="input" type="email" placeholder="Введите email" value="">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Тема</label>
+                            <div class="control">
+                                <div class="select" style="color:#006400">
+                                    <select>
+                                        <option>Сообщить о проблеме</option>
+                                        <option>Предложить улучшение</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Сообщение</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Введите текст"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    Согласие <a href="#" style="color:#006400">на обработку данных</a>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link"
+                                    style="background-color:#006400; color:white;">Отправить</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link is-light" style="color:#006400">Отмена</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="column is-7">
+                    <div class="content">
+                        <h2 class="title is-size-2" style = "color:azure ">Обратная связь</h2>
+                        <p class = "is-size-5" style = "color:azure ">
+                            Эта форма предназначена для обращений пользователей сервиса построения маршрутов.
+                            Вы можете сообщить о проблеме с маршрутом, предложить улучшение или задать вопрос.
+                        </p>
+
+                        <h3 class="subtitle is-size-2" style = "color:azure ">Контакты</h3>
+                        <p class = "is-size-5" style = "color:azure "> 
+                            Email: support@wander.ru<br>
+                            Телефон: +7-900-000-00-00<br>
+                            Адрес: Russia, Moscow
+                        </p>
+                        <p>
+                            <a href="#"><i class="fa-brands fa-telegram fa-2x" style="color:azure"></i></a>
+                            <a href="#"><i class="fa-brands fa-vk fa-2x" style="color:azure"></i></a>
+                            </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+<footer class="bg-near-black white-80 pv3 pv3-l ph4">
+    <p class="f6"><span class="dib mr4 mr5-ns">Wander — 2026</span>
+    </p>
+</footer>
+
+</html>
