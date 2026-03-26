@@ -39,19 +39,31 @@
 
                 <div class="column is-5">
                     <div class="box">
-
+                    <form id = "feedbackForm" novalidate>
                         <div class="field">
-                            <label class="label">Имя</label>
+                            <label class="label" for = "fullname">ФИО</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="Введите текст" value="">
+                                <input 
+                                class="input" 
+                                id = "fullname" 
+                                name = "fullname" 
+                                type="text" 
+                                placeholder="Введите ФИО">
                             </div>
+                            <p class = "help is-danger" id = "fullnameError"></p>
                         </div>
 
                         <div class="field">
-                            <label class="label">Email</label>
+                            <label class="label" for = "email">Email</label>
                             <div class="control">
-                                <input class="input" type="email" placeholder="Введите email" value="">
+                                <input 
+                                class="input" 
+                                id = "email" 
+                                name = "email" 
+                                type="email" 
+                                placeholder="Введите email">
                             </div>
+                            <p class = "help is-danger" id = "emailError"></p>
                         </div>
 
                         <div class="field">
@@ -67,31 +79,53 @@
                         </div>
 
                         <div class="field">
-                            <label class="label">Сообщение</label>
+                            <label class="label" for = "message">Сообщение</label>
                             <div class="control">
-                                <textarea class="textarea" placeholder="Введите текст"></textarea>
+                                <textarea 
+                                class="textarea" 
+                                id = "message" 
+                                name = "message" 
+                                placeholder="Введите текст">
+                                </textarea>
                             </div>
-                        </div>
+                            <p class = "help is-danger" id = "messageError"></p>
+                        </div> 
 
                         <div class="field">
                             <div class="control">
-                                <label class="checkbox">
-                                    <input type="checkbox">
-                                    Согласие <a href="#" style="color:#006400">на обработку данных</a>
+                                <label class="checkbox" for = "checkbox">
+                                    <input 
+                                    type="checkbox" 
+                                    id = "checkbox" 
+                                    name = "checkbox">
+                                    Согласие 
+                                    <a href="#" style="color:#006400">
+                                    на обработку данных *
+                                    </a>
                                 </label>
+                                <p class = "help is-danger" id = "checkboxError"></p>
                             </div>
                         </div>
 
                         <div class="field is-grouped">
                             <div class="control">
-                                <button class="button is-link"
-                                    style="background-color:#006400; color:white;">Отправить</button>
+                                <button 
+                                class="button is-link" 
+                                type = "submit"
+                                style="background-color:#006400; color:white;">
+                                Отправить
+                                </button>
                             </div>
                             <div class="control">
-                                <button class="button is-link is-light" style="color:#006400">Отмена</button>
+                                <button 
+                                class="button is-link is-light" 
+                                type = "reset" 
+                                style="color:#006400">
+                                Отмена
+                                </button>
                             </div>
                         </div>
-
+                    </form>
                     </div>
                 </div>
 
@@ -120,10 +154,10 @@
             </div>
         </div>
     </section>
+    <footer class="bg-near-black white-80 pv3 pv3-l ph4">
+        <p class="f6"><span class="dib mr4 mr5-ns">Wander — 2026</span>
+        </p>
+    </footer>
+    <script src="js/validation.js"></script>
 </body>
-<footer class="bg-near-black white-80 pv3 pv3-l ph4">
-    <p class="f6"><span class="dib mr4 mr5-ns">Wander — 2026</span>
-    </p>
-</footer>
-
 </html>
